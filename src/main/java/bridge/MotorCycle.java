@@ -7,7 +7,8 @@ public class MotorCycle extends Vehicle{
     }
 
     public float generateInsuranceCost() {
-        return this.baseCost;
+
+        return 2*(this.vehicleCost * (this.insurancePlan.getInsurancePercentage()));
     }
 
 }

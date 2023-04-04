@@ -7,6 +7,6 @@ public class Truck extends Vehicle{
     }
 
     public float generateInsuranceCost() {
-        return this.baseCost;
+        return (float) (2.8)*(this.vehicleCost * (this.insurancePlan.getInsurancePercentage()));
     }
 }
